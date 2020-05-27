@@ -1,1 +1,118 @@
+ *{
+   box-sizing: border-box;
+ }
+
+ html,body{
+   padding: 0;
+   margin: 0;
+ }
  
+ body{
+   background-color: rgb(233, 38, 77);
+   font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+.encabezado,
+.principal{
+  margin:0 50px;
+}
+
+/* encabezado */
+
+
+.encabezado > p:first-child {
+  text-transform: lowercase;
+  color:white;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-bottom: 0;
+  text-indent: 8px;
+}
+
+.encabezado > p:nth-child(2){
+  color: white;
+  margin:0;
+  font-size: 5em;
+  font-weight: bolder;
+  line-height: 80px;
+  height: 94px;
+}
+
+/* .encabezado > p:nth-child(2)::first-letter{
+  font-size: 2em;
+} */
+.encabezado p > span {
+  font-size: 0.2em;
+  display: inline-block;
+  margin-left:3px;
+}
+
+.encabezado span {
+  font-weight: bolder;
+  font-size: 2em;
+  text-indent: 8px;
+    display: inline-block;
+}
+
+.encabezado > p:nth-child(4){
+  text-indent: 8px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+.encabezado > p:nth-child(5){
+  text-indent: 8px;
+  margin-top: 0;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+/* end encabezado */
+
+/* principal */
+
+.principal{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.principal h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-indent: 8px;
+  color: white;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  gap: 20px;
+  
+}
+
+.grid-box-item img {
+  width: 20%;
+}
+
+.grid-box-item{
+  display: flex;
+}
+
+.grid-box-item span{
+  padding: 10px;
+}
+
+footer {
+  padding: 10px;
+  color: rgb(202, 170, 170);
+  font-size: 0.6em;
+
+}
+footer > p{
+  margin: 0 50px;
+}
+
