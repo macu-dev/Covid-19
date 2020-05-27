@@ -14,13 +14,11 @@
  }
 
 .encabezado,
-.principal{
+.principal, footer > p{
   margin:0 50px;
 }
 
 /* encabezado */
-
-
 .encabezado > p:first-child {
   text-transform: lowercase;
   color:white;
@@ -52,7 +50,7 @@
   font-weight: bolder;
   font-size: 2em;
   text-indent: 8px;
-    display: inline-block;
+  display: inline-block;
 }
 
 .encabezado > p:nth-child(4){
@@ -70,7 +68,6 @@
 /* end encabezado */
 
 /* principal */
-
 .principal{
   margin-top: 20px;
   margin-bottom: 30px;
@@ -91,7 +88,6 @@
   margin-bottom: 30px;
   padding: 10px;
   gap: 20px;
-  
 }
 
 .grid-box-item img {
@@ -110,9 +106,4 @@ footer {
   padding: 10px;
   color: rgb(202, 170, 170);
   font-size: 0.6em;
-
 }
-footer > p{
-  margin: 0 50px;
-}
-
