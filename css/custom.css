@@ -106,4 +106,121 @@ footer {
   padding: 10px;
   color: rgb(202, 170, 170);
   font-size: 0.6em;
+  text-align: center;
+}
+
+/* media queries */
+@media screen and (max-width: 1085px){
+  .encabezado > p:nth-child(2){
+    font-size: 4em;
+  }
+
+  .encabezado span, .principal h1{
+    font-size: 1.5em;
+  }
+
+  .encabezado > p:nth-child(4), .encabezado > p:nth-child(5){
+    font-size: 0.8em;
+  }  
+
+  .encabezado > p:first-child {
+    margin-top: 20px;
+  }
+
+  .grid-box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .grid-box-item span{
+    font-size: 16px;
+  }
+  .principal{
+    margin-bottom: 25px;
+  }
+
+
+}
+
+@media screen and (max-width:987px){
+  .encabezado > p:first-child,.encabezado span, .encabezado > p:nth-child(4), .encabezado > p:nth-child(5), .principal h1{
+    text-indent: 0;
+  }
+}
+
+@media screen and (max-width:688px){
+  .encabezado span,.principal h1 {
+    font-size: 1em;
+  }
+  .encabezado > p:nth-child(4), .encabezado > p:nth-child(5){
+    font-size: 0.7em;
+  }
+
+  .grid-box-item span {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .grid-box-item img {
+    width: 30%;
+  }
+  .encabezado > p:nth-child(2) {
+    font-size: 3em;
+    height: 83px;
+  }
+
+  .grid-box{
+    padding: 0;
+  }
+  .grid-box-item {
+    align-items: center;
+  } 
+}
+
+@media screen and (max-width:512px){
+  .encabezado > p:nth-child(2) {
+    font-size: 2.5em;
+  }
+  .grid-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+  }
+  .grid-box-item img {
+    width: 20%;
+  }
+  .grid-box-item {
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: -8px -6px 20px rgba(216, 26, 26, 0), 8px 8px 20px rgba(0, 0, 0, 0.41);
+    background: #ffe52fde;
+  }
+
+  .grid-box-item span {
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width:467px){
+  .encabezado > p:nth-child(2) {
+    font-size: 1.4em;
+    line-height: 47px;
+    height: 46px;
+  }
+
+  .encabezado p > span {
+    font-size: 0.3em;
+  }
+  
+
+  .encabezado > p:nth-child(4), .encabezado > p:nth-child(5) {
+    font-size: 0.6em;
+  }
+
+  .grid-box-item {
+    border-radius: 20px;
+  }
+
+  .encabezado > p:first-child {
+    margin-top: 24px;
+    font-size: 0.9em;
+  }
 }
