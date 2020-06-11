@@ -1,52 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/custom.css">
   <title>COVID-19</title>
+  <link rel="shortcut icon" href="img/virus.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/chart.js/dist/Chart.css">
 </head>
 <body>
+  <nav class="menu">
+    <a href="/" class="menu-logo">
+      <img src="img/virus.svg" alt="icono">
+      Coronavirus
+    </a>
+    <ul class="menu-lista">
+      <li>Recomendaciones</li>
+    </ul>
+  </nav>
   <header class="encabezado">
-    <p>Nuevo</p>
-    <p>Coronavirus<span>COVID-19</span></p>
-    <span>Saber para prevenir</span>
-    <p>Produce una enfermedad respiratoria que solo en algunos casos puede complicarse (principalmente en personas mayores).</p><p>Se transmite por vias respiratorias cuando el contacto es estrecho o por contacto con superficies contaminadas.</p>
+    <div class="encabezado-img">
+      <img src="img/virus.svg" alt="Coronavirus">
+    </div>
+    <div class="encabezado-titulo">
+      <h1>Estadistica sobre el Covid-19</h1>
+      <p>Aquí encontrarás información y estadisticas sobre el COVID-19 en Perú y en el mundo.</p>
+    </div>
   </header>
-  <main class="principal">
-    <h1>Cuidados</h1>
-    <div class="grid-box">
-      <div class="grid-box-item">
-        <img src="img/lavarManos.svg" alt="Lavarse las manos">
-        <span>Lavarse las manos con jabón regularmente.</span>
-      </div>
+  <br/>
+  <hr/>
+  <section class="seccion-estadistica">
+    <div class="seccion-estadistica-titulo">
+      <p>Casos de coronavirus en el mundo <img src="img/mundo.png" alt="mundo"> </p>
+    </div>
 
-      <div class="grid-box-item">
-        <img src="img/estornudar.svg" alt="estornudar">
-        <span>Estornudar en el pliegue del codo.</span>
+    <div class="seccion-estadistica-info">
+      <form action="" class="seccion-estadistica-info-formulario">
+        <select name="paises" id="paises">
+          <option value="">Global</option>
+          <option value="">argentina</option>
+        </select>
+        <label for="paises">Paises</label>
+      </form>
+    </div>
+  </section>
+  <section class="seccion-estadistica-box">
+    <h2 id="pais">Argentina</h2>
+    <div class="seccion-estadistica-box-grupo">
+      <div class="box-item">
+        <span class="titulo">Confirmados</span>
+        <div>
+          <span id="infoConf" class="infoNumero">12222</span>
+        </div>
+        <div>
+          <span>Actualizado en <span id="fecha">fecha</span></span>
+        </div>
       </div>
-
-      <div class="grid-box-item">
-        <img src="img/noTocarse.svg" alt="No tocarse">
-        <span>No llevarse las manos a los ojos, nariz ni boca.</span>
+      <div class="box-item">
+        <span class="titulo">Recuperados</span>
+        <div>
+          <span id="infoRecup" class="infoNumero">12222</span>
+        </div>
+        <div>
+          <span>Actualizado en <span id="fecha">fecha</span></span>
+        </div>
       </div>
-
-      <div class="grid-box-item">
-        <img src="img/ventilar.svg" alt="ventilar ambientes">
-        <span>Ventilar los ambientes.</span>
-      </div>
-
-      <div class="grid-box-item">
-        <img src="img/limpiar.svg" alt="limpiar los objetos">
-        <span>Limpiar los objetos que se usan con frecuencia.</span>
-      </div>
-
-      <div class="grid-box-item">
-        <img src="img/vajilla.svg" alt="no compartir">
-        <span>No compartir platos, vasos u otros artículos de uso personal.</span>
+      <div class="box-item">
+        <span class="titulo">Muertos</span>
+        <div>
+          <span id="infoMuert" class="infoNumero">12222</span>
+        </div>
+        <div>
+          <span>Actualizado en <span id="fecha">fecha</span></span>
+        </div>
       </div>
     </div>
-  </main>
-  <footer><p>Developed by Macu-dev🥰</p></footer>
+  </section>
+
+  <section class="seccion-grafico">
+    <div class="grafico-box">
+      <canvas id="myChart"></canvas>
+    </div>
+  </section>
+
+  <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+  <script src="js/grafic.js"></script>
 </body>
 </html>

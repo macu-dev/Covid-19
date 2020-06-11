@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+
+html,body{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu{
+  position: fixed;
+  top:0;
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  background-color: #1a1b1c;
+  z-index: 200;
+}
+
+.menu-logo img{
+  width: 35px;
+  margin-right: 6px;
+}
+
+.menu-logo{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: antiquewhite;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.menu-lista{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.menu-lista li{
+  padding-right: 20px;
+  color:antiquewhite;
+  font-size: .8em;
+}
+
+.menu-lista:hover{
+  cursor: pointer;
+}
+
+.encabezado{
+  margin: 70px 50px 0 50px;
+}
+
+.encabezado-img img{
+  max-width: 30%;
+  margin: 30px;
+}
+
+.encabezado-img{
+  display: flex;
+  justify-content: center;
+}
+
+.encabezado-titulo{
+  color:#36313d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.encabezado-titulo p, h1{
+  margin: 0;
+}
+.encabezado-titulo h1{
+  margin-bottom: 8px;
+}
+
+.seccion-estadistica-titulo p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  color:#36313d;
+  letter-spacing: 2px;
+}
+
+.seccion-estadistica-titulo p > img{
+  width: 30px;
+  margin-left: 6px;
+}
+
+.seccion-estadistica{
+  padding-top: 15px;
+  margin: 0 50px;
+}
+
+.seccion-estadistica-info{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.seccion-estadistica-info-formulario{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.seccion-estadistica-info-formulario label{
+  /* display: block; */
+  position: absolute;
+  left: 25%;
+  bottom:13px;
+  font-size: 0.75em;
+  transition: all .2s ease-in .2s;
+  visibility: hidden;
+  z-index: 10;
+}
+
+
+.seccion-estadistica-info-formulario select{
+  width: 50%;
+  padding: 10px 26px 10px 12px;
+  border: 1px solid #ced4da;
+  z-index: 100;
+  -webkit-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); 
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border-radius: 2px;
+  padding-right: 2rem;
+}
+
+.seccion-estadistica-box h2{
+  text-align: center;
+  font-size: 1.7em;
+  color:#e04f4f;
+
+}
+
+
+.seccion-estadistica-box-grupo{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.seccion-estadistica-box-grupo .box-item{
+  width: 300px;
+  margin: 8px;
+  padding: 24px;
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+
+
+.titulo{
+  color:#e04f4f;
+  font-weight: bolder;
+  display: block;
+  text-align:center;
+}
+
+.titulo + div{
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bolder;
+  color: #393939;
+}
+
+.titulo + div ~ div{
+  font-size: 0.65rem;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  color:rgba(0, 0, 0, 0.54);
+  text-align: center;
+}
+
+select:focus + label{
+  color: rgba(0, 0, 0, 0.54);
+  bottom: 39px;
+  visibility: visible;
+}
+
+select:hover{
+  cursor: pointer;
+}
+
+.seccion-grafico{
+  display: flex;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+/* #myChart{
+  width: 968px !important;
+  height: 341px !important;
+} */
+
+.grafico-box{
+  width: 70vw;
+  position: relative;
+  margin: 8px;
+  padding: 12px;
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
