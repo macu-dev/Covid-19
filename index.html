@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="img/virus.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="node_modules/chart.js/dist/Chart.css">
+  <link rel="stylesheet" href="js/odometer/themes/odometer-theme-minimal.css">
 </head>
 <body>
   <nav class="menu">
@@ -24,10 +25,9 @@
     </div>
     <div class="encabezado-titulo">
       <h1>Estadistica sobre el Covid-19</h1>
-      <p>Aquí encontrarás información y estadisticas sobre el COVID-19 en Perú y en el mundo.</p>
+      <p>Aquí encontrarás información y estadisticas sobre el COVID-19 en el Perú y en el mundo.</p>
     </div>
   </header>
-  <br/>
   <hr/>
   <section class="seccion-estadistica">
     <div class="seccion-estadistica-titulo">
@@ -38,40 +38,39 @@
       <form action="" class="seccion-estadistica-info-formulario">
         <select name="paises" id="paises">
           <option value="">Global</option>
-          <option value="">argentina</option>
         </select>
         <label for="paises">Paises</label>
       </form>
     </div>
   </section>
   <section class="seccion-estadistica-box">
-    <h2 id="pais">Argentina</h2>
+    <h2 id="pais"></h2>
     <div class="seccion-estadistica-box-grupo">
       <div class="box-item">
         <span class="titulo">Confirmados</span>
         <div>
-          <span id="infoConf" class="infoNumero">12222</span>
+          <span id="infoConf" class="infoNumero odometer">12222</span>
         </div>
         <div>
-          <span>Actualizado en <span id="fecha">fecha</span></span>
+          <span>Actualizado el <span class="fecha">fecha</span></span>
         </div>
       </div>
       <div class="box-item">
         <span class="titulo">Recuperados</span>
         <div>
-          <span id="infoRecup" class="infoNumero">12222</span>
+          <span id="infoRecup" class="infoNumero odometer">12222</span>
         </div>
         <div>
-          <span>Actualizado en <span id="fecha">fecha</span></span>
+          <span>Actualizado el <span class="fecha">fecha</span></span>
         </div>
       </div>
       <div class="box-item">
         <span class="titulo">Muertos</span>
         <div>
-          <span id="infoMuert" class="infoNumero">12222</span>
+          <span id="infoMuert" class="infoNumero odometer">12222</span>
         </div>
         <div>
-          <span>Actualizado en <span id="fecha">fecha</span></span>
+          <span>Actualizado el <span class="fecha">fecha</span></span>
         </div>
       </div>
     </div>
@@ -83,7 +82,15 @@
     </div>
   </section>
 
+  <br/>
+  <footer>
+    <p>Desarrollado con <span><img src="img/stickers-amor-corazon-latiendo-gif_gif (500×498).gif" alt="corazon"></span> en Javascript</p>
+  </footer>
+ 
+  <script src="js/odometer/odometer.js"></script>
   <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
-  <script src="js/grafic.js"></script>
+  <script src="js/grafic.js" type="module"></script>
+  <script src="js/app.js" type="module"></script>
+
 </body>
 </html>
