@@ -59,6 +59,7 @@ html,body{
 
 .encabezado{
   height: 100%;
+  margin-top: 35px;
   display: flex;
   justify-content: center;
   align-content: center;
